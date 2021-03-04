@@ -1,0 +1,53 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 10rem;
+    margin-left: 20rem;
+    margin-right: 5rem;
+    padding-top: 2rem;
+    animation: opacityChange 1.5s ease-in;
+}
+#iaprLogo {
+    width: 50rem;
+    transform: scale(1);
+    transition-duration: 2.5s;
+}
+#subHeader {
+    margin-top: -6rem;
+    margin-left: 2rem;
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+@keyframes opacityChange {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+.logo:hover {
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+@media only screen and (max-width: 1000px) {
+    main {
+        margin-left: 5rem;
+    }
+    .logo {
+        width: 100%;
+    }
+    #subHeader {
+        margin-top: 0;
+        margin-left: 0;
+        width: 100%;
+        font-size: 2rem;
+    }
+    #iaprLogo {
+        width: 100%;
+    }
+    .logo:hover {
+        transform: scale(1);
+    }
+  }

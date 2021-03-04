@@ -106,40 +106,6 @@ main {
     height: 70vh;
     border-radius: 20px;
 }
-#iaprLogo {
-    width: 50rem;
-    transform: scale(1);
-    transition-duration: 2.5s;
-}
-#subHeader {
-    margin-top: -6rem;
-    margin-left: 2rem;
-    font-size: 2.25rem;
-    font-weight: bold;
-}
-@keyframes opacityChange {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 100%;
-    }
-}
-.logo:hover {
-    transform: scale(1.1);
-    transition-duration: 1s;
-}
-/* .description {
-    margin-top: 20vh;
-    font-size: 1rem;
-    padding: 1rem;
-}
-.description:hover {
-    transform: scale(1.1);
-    padding: 1rem;
-    background-color: rgb(201, 196, 216);
-    border-radius: 10px;
-} */
 footer {
     position: fixed;
     bottom: 0;
@@ -235,9 +201,10 @@ footer {
         border-radius: none;
     }
 }
-  @media only screen and (max-height: 600px) {
+  @media only screen and (max-height: 800px) {
     .container {
         margin-top: 5rem;
         width: 100%;
+        overflow: hidden;
     }
 }
