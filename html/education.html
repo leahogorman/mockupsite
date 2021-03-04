@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Up</title>
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/education.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+        <a href="../index.html"><img id="headerLogo" src="../img/IAPRLogoPMS2597.png" alt="IAPR_LOGO"></a>
+        <nav>
+            <ul class="list large-screen">
+                <a class="navLink" href="about.html"><li class="listItem" id="about">About</li></a>
+                <a class="navLink" href="education.html"><li class="listItem" id="educationalResources">Educational Resources</li></a>
+                <a class="navLink" href="scholarship.html"><li class="listItem" id="researchScholarships">Research Scholarships</li></a>
+                <a class="navLink" href="contact.html"><li class="listItem" id="contact">Contact</li></a>
+            </ul>
+            <div class="dropdown small-screen" onclick="headerLinks(this)">
+                <h1 class="nav-btn not-hidden" id="nav-btn">Click to Navigate</h1>
+                    <ul class="list hidden">
+                        <a class="navLink" href="about.html"><li class="listItem" id="about">About</li></a>
+                        <a class="navLink" href="education.html"><li class="listItem" id="educationalResources">Educational Resources</li></a>
+                        <a class="navLink" href="scholarship.html"><li class="listItem" id="researchScholarships">Research Scholarships</li></a>
+                        <a class="navLink" href="contact.html"><li class="listItem" id="contact">Contact</li></a>
+                    </ul>
+            </div>
+        </nav>
+</header>
+<main>
+        <div class="contents open" id="contents">
+            <div class="nav-bar" onclick="showLinks(this)">
+                <h1 class="nav-btn" id="nav-btn">Click to Navigate</h1>
+                    <div class="nav-links hidden">
+                        <label><input id="dogs" class="nav-option" name="choice" value="Video Category 1" onclick="Choice(this)"></label>
+                        <label><input id="cats" class="nav-option" name="choice" value="Video Category 2" onclick="Choice(this)"></label>
+                        <label><input id="hamsters" class="nav-option" name="choice" value="Video Category 3" onclick="Choice(this)"></label>
+                        <label><input id="links" class="nav-option" name="choice" value="Links" onclick="Choice(this)"></label>
+                    </div>
+            </div>
+        </div>
+    </main>
+<footer id="footer">
+    <ul class="footerLinks">
+         <a class="footerLink" href="../index.html"><li>Home</li></a>
+        <a class="footerLink" href="https://iapr.org/"><li>IAPR Website</li></a>
+        <a class="footerLink" href="about.html"><li>About</li></a>
+        <a class="footerLink" href="education.html"><li>Educational Resources</li></a>
+        <a class="footerLink" href="scholarship.html"><li>Research Scholarships</li></a>
+        <a class="footerLink" href="contact.html"><li>Contact</li></a>
+        <a class="footerLink" href=""><li>Admin</li></a>
+    </ul>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="../js/app.js"></script>
+</body>
+</html>
